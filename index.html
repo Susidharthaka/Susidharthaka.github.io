@@ -29,7 +29,7 @@
 
         app.controller('myCtrl', function ($scope, $http) {
             $scope.result = 0;
-            $http.get('EmployeeService.asmx/GetAllEmployees')
+            $http.get('EmployeeService.asmx/GetAllEmployees()')
                 .then(function (response) {
                     $scope.players = response.data;
                 });
